@@ -159,9 +159,7 @@ header nav {
   width: 100%;
   height: 100%;
 }
-header nav .logo {
-  border: 1px solid black;
-  background: url("assets.logo.png");
+header nav img {
   width: 10rem;
   height: 100%;
 }
@@ -222,12 +220,10 @@ header nav .links a {
   border-radius: 0.8rem;
 }
 footer {
-  border: 1px solid black;
   width: 100%;
   height: 20vh;
 }
-nav {
-  border: 1px solid black;
+footer nav {
   width: 100%;
   height: 20vh;
   background-color: #17a2b8;
@@ -237,7 +233,7 @@ nav {
   flex-direction: row;
 }
 @media ( max-width: 500px )  {
-  nav {
+  footer nav {
     width: 85%;
   }
 }
@@ -279,6 +275,17 @@ nav {
   border-radius: 0.8rem;
 }
 .about {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
   width: 100%;
-  height: 40vh;
+  height: 60rem;
+  background: url("/assets/couple.jpg");
+  background-color: #b36447;
+}
+.about p {
+  margin-top: 5rem;
+  width: 70%;
+  font-size: 2rem;
 }
