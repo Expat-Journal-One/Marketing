@@ -1,0 +1,31 @@
+// Color assignments
+@font-color: @shark;
+@button-bg: @eastern-blue;
+@main-bg: @white;
+@navigation-border: @silver;
+@footer-bg: @sandy-beach;
+
+// Colors
+@white: #ffffff;
+@silver: #c0c0c0;
+@shark: #212529;
+@eastern-blue: #17a2b8;
+@sandy-beach: #ffebcd;
+
+//Escaping
+@mobile: ~"( max-width: 500px ) ";
+
+.flex-mixin (@align, @justify, @flex-direction) {
+  display: flex;
+  align-items: @align;
+  justify-content: @justify;
+  flex-direction: @flex-direction;
+}
+.btn-mixin (@color, @bg-color) {
+  background-color: @bg-color;
+  width: 85%;
+  height: 5rem;
+  color: @color;
+  font-size: 2rem;
+  border-radius: 1.5rem;
+}

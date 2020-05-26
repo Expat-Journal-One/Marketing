@@ -1,0 +1,33 @@
+.container {
+  .flex-mixin(center, flex-start,row);
+  background: url("/assets/travel.jpg");
+  background-color: green;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100rem;
+
+  .info {
+    .flex-mixin(center, center,column);
+    width: 50%;
+    height: 40%;
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 2rem;
+      color: @shark;
+    }
+    p {
+      font-size: 2rem;
+      color: @shark;
+      width: 80%;
+    }
+    button {
+      margin-top: 2rem;
+      font-size: 2rem;
+      background-color: rgb(179, 100, 71);
+      color: @shark;
+      border-radius: 0.8rem;
+    }
+  }
+}
