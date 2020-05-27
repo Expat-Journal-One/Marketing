@@ -2,11 +2,13 @@ header {
   background-color: @eastern-blue;
   height: 15vh;
   .flex-mixin(center, space-around,row);
-  @media @mobile {
-    flex-direction: column;
-  }
+
   nav {
+    @media @mobile {
+      margin-right: 0;
+    }
     .flex-mixin(center, space-between,row);
+    margin-right: 2rem;
     border: 1px solid black;
     width: 100%;
     height: 100%;
@@ -15,7 +17,6 @@ header {
       height: 100%;
     }
     .links {
-      margin-right: 2rem;
       width: 50%;
       height: 10vh;
       .flex-mixin (center, space-between, row);

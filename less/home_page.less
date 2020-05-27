@@ -1,4 +1,7 @@
 .container {
+  @media @mobile {
+    .flex-mixin(center, center,row);
+  }
   .flex-mixin(center, flex-start,row);
   background: url("/assets/travel.jpg");
   background-color: green;
@@ -8,7 +11,10 @@
   height: 100rem;
 
   .info {
-    .flex-mixin(center, center,column);
+    background-color: rgb(190, 212, 235);
+
+    opacity: 0.7;
+    .flex-mixin(center, center, column);
     width: 50%;
     height: 40%;
 
@@ -28,6 +34,10 @@
       background-color: rgb(179, 100, 71);
       color: @shark;
       border-radius: 0.8rem;
+      &:hover {
+        background-color: rgb(12, 13, 14);
+        color: @silver;
+      }
     }
   }
 }
