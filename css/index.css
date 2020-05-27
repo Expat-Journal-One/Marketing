@@ -195,7 +195,7 @@ header nav .links a {
 }
 @media ( max-width: 500px )  {
   header {
-    height: 40vh;
+    height: 43vh;
   }
 }
 .container {
