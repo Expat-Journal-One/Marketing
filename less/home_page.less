@@ -22,12 +22,12 @@
       font-size: 4rem;
       margin-bottom: 2rem;
       color: @shark;
-    }
+    } // end of h1
     p {
       font-size: 2rem;
       color: @shark;
       width: 80%;
-    }
+    } // end of p
     button {
       margin-top: 2rem;
       font-size: 2rem;
@@ -37,7 +37,10 @@
       &:hover {
         background-color: rgb(12, 13, 14);
         color: @silver;
-      }
+      } // end of hover
+    } // end of button
+    @media @mobile {
+      width: 60%;
     }
-  }
-}
+  } // end of info
+} // end of container

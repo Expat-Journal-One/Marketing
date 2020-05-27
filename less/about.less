@@ -1,7 +1,4 @@
 .container2 {
-  @media @mobile {
-    .flex-mixin(center, flex-start,row);
-  }
   .flex-mixin(center, flex-end,row);
   background: url("/assets/beach.jpg");
   background-color: green;
@@ -13,47 +10,54 @@
     .flex-mixin(center, center,column);
     width: 50%;
     height: 40%;
-
     h1 {
       font-size: 6rem;
       margin-bottom: 2rem;
       color: @shark;
-    }
+    } // end of h1
     p {
       font-size: 2rem;
       color: @shark;
       width: 80%;
-    }
+    } // end of p
     button {
       margin-top: 2rem;
       font-size: 2rem;
       background-color: rgb(179, 100, 71);
       color: @shark;
       border-radius: 0.8rem;
-    }
-  }
-}
-.about {
-  @media (max-width: 800px) {
-    height: 130vh;
-  }
+    } // end of button
+  } // end of info
   @media @mobile {
-    background-color: rgb(179, 100, 71);
-    height: 150vh;
-  }
-
-  .flex-mixin(center, flex-start,column);
-
+    .flex-mixin(center, flex-start,row);
+  } // end of container2 @media
+} // end of container2
+.about {
+  .flex-mixin(center, space-around,column);
   width: 100%;
-  height: 120vh;
+  height: 190vh;
   background: url("/assets/couple.jpg");
-
-  p {
-    @media (max-width: 800px) {
-      width: 90%;
-    }
-    margin-top: 5rem;
-    width: 70%;
-    font-size: 2rem;
-  }
-}
+  background-repeat: no-repeat;
+  background-size: cover;
+  div {
+    border: 1px solid black;
+    width: 60%;
+    height: auto;
+    img {
+      width: 20%;
+      @media @mobile {
+        width: 50%;
+      } // end of img @media
+    } // img
+    h1 {
+      font-size: 2.5rem;
+    } // end of h1
+    .flex-mixin(center, space-around, row);
+    @media @mobile {
+      .flex-mixin(center, flex-start,column);
+    } // end of div @media
+  } // end of div
+  @media @mobile {
+    height: 250vh;
+  } // end of about @media
+} // end of about

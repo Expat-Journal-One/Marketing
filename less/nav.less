@@ -4,9 +4,6 @@ header {
   .flex-mixin(center, space-around,row);
 
   nav {
-    @media @mobile {
-      margin-right: 0;
-    }
     .flex-mixin(center, space-between,row);
     margin-right: 2rem;
     border: 1px solid black;
@@ -15,7 +12,10 @@ header {
     img {
       width: 10rem;
       height: 100%;
-    }
+      @media @mobile {
+        height: 20vh;
+      }
+    } // end of img
     .links {
       width: 50%;
       height: 10vh;
@@ -23,11 +23,18 @@ header {
       a {
         text-decoration: none;
         color: rgb(179, 100, 71);
-        font-size: 2rem;
-      }
+        font-size: 3rem;
+      } // end of a
       @media @mobile {
-        width: 85%;
-      }
+        .flex-mixin (center, space-between, column);
+      } // end of links @media
     }
+    @media @mobile {
+      .flex-mixin (center, flex-start, column);
+      margin-right: 0;
+    } // nav @media
+  } // end of nav
+  @media @mobile {
+    height: 40vh;
   }
 }
