@@ -1,7 +1,7 @@
 .container2 {
-  .flex-mixin(center, flex-end,row);
-  background: url("/assets/beach.jpg");
-  background-color: green;
+  .flex-mixin(center, flex-start,row);
+  background: url("/assets/greece.jpg");
+  // background-color: green;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -11,22 +11,11 @@
     width: 50%;
     height: 40%;
     h1 {
+      text-align: center;
       font-size: 6rem;
       margin-bottom: 2rem;
       color: @shark;
     } // end of h1
-    p {
-      font-size: 2rem;
-      color: @shark;
-      width: 80%;
-    } // end of p
-    button {
-      margin-top: 2rem;
-      font-size: 2rem;
-      background-color: rgb(179, 100, 71);
-      color: @shark;
-      border-radius: 0.8rem;
-    } // end of button
   } // end of info
   @media @mobile {
     .flex-mixin(center, flex-start,row);
