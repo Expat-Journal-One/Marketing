@@ -176,6 +176,9 @@ header nav .links a {
   color: #b36447;
   font-size: 3rem;
 }
+header nav .links a:hover {
+  color: #c0c0c0;
+}
 @media ( max-width: 500px )  {
   header nav .links {
     display: flex;
