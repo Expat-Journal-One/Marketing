@@ -1,5 +1,8 @@
 .container {
-  .flex-mixin(center, flex-start,row);
+  @media @mobile {
+    .flex-mixin(center, center,row);
+  }
+  .flex-mixin(center, center,row);
   background: url("/assets/travel.jpg");
   background-color: green;
   background-repeat: no-repeat;
@@ -8,7 +11,10 @@
   height: 100rem;
 
   .info {
-    .flex-mixin(center, center,column);
+    text-align: center;
+    background-color: rgb(190, 212, 235);
+    opacity: 0.7;
+    .flex-mixin(center, center, column);
     width: 50%;
     height: 40%;
 
@@ -16,18 +22,25 @@
       font-size: 4rem;
       margin-bottom: 2rem;
       color: @shark;
-    }
+    } // end of h1
     p {
       font-size: 2rem;
       color: @shark;
       width: 80%;
-    }
-    button {
+    } // end of p
+    .button {
       margin-top: 2rem;
       font-size: 2rem;
       background-color: rgb(179, 100, 71);
       color: @shark;
       border-radius: 0.8rem;
+      &:hover {
+        background-color: rgb(12, 13, 14);
+        color: @silver;
+      } // end of hover
+    } // end of button
+    @media @mobile {
+      width: 60%;
     }
-  }
-}
+  } // end of info
+} // end of container
